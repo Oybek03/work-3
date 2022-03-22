@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 40%;
+  height: 100vh;
+}
+body {
+  overflow: hidden;
+}
+.left-section {
+  position: relative;
+}
+.left-section .one {
+  animation-name: leftSlide;
+  animation-duration: 1s;
+}
+.right-section .three {
+  animation-name: threeSlide;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+.right-section .four {
+  animation-name: slide;
+  animation-duration: 1s;
+}
+.btn1 {
+  position: absolute;
+  transform: translateY(300px);
+  font-size: 60px;
+  height: 50px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  z-index: 55555;
+}
+.btn2 {
+  position: absolute;
+  transform: translateY(350px) translateX(-30px) rotate(180deg);
+  font-size: 60px;
+  height: 50px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  z-index: 55555;
+}
+button:active{
+background-color: rgba(0, 0, 0, 0.493);
+color: white;
+}
+@keyframes slide {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-650px);
+  }
+}
+@keyframes leftSlide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateY(650px);
+  }
+}
+@keyframes threeSlide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateY(-650px);
+  }
+}
